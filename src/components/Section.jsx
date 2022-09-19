@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from './Grid';
 
-const Categories = ({ categories }) => {
+const Section = ({ categories }) => {
 	return (
 		<div className="container mx-auto">
 			{categories.map((category) => (
@@ -16,4 +16,4 @@ const Categories = ({ categories }) => {
 	);
 };
 
-export default Categories;
+export default Section;

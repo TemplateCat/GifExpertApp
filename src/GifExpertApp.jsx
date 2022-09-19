@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Form from './components/Form';
-import Grid from './components/Grid';
+import Section from './components/Section';
 
 const GifExpertApp = () => {
 	const [categories, setCategories] = useState(['Jurassic World']);
@@ -16,7 +16,7 @@ const GifExpertApp = () => {
 			<h1 className="font-bold text-4xl text-slate-500">Gif Expert App</h1>
 
 			<Form AddCategory={AddCategory} />
-			<Grid categories={categories} />
+			<Section categories={categories} />
 		</div>
 	);
 };
