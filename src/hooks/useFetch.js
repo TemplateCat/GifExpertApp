@@ -12,7 +12,7 @@ const useFetch = (category) => {
             loading: true
         })
 
-        const url = `https://api.giphy.com/v1/gifs/search?api_key=xwh4Yx7qvFrqwGQ4rfzWuJ2fWQmvqrbT&q=${category}&limit=10`
+        const url = `https://api.giphy.com/v1/gifs/search?api_key=xwh4Yx7qvFrqwGQ4rfzWuJ2fWQmvqrbT&q=${category}&limit=12`
         const res = await fetch(url);
         const { data } = await res.json();
 

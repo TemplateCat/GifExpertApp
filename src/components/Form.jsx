@@ -7,6 +7,7 @@ const Form = ({ AddCategory }) => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		if (inputValue.trim().length <= 0) return;
 		AddCategory(inputValue);
 		setInputValue('');
 	};
@@ -17,9 +18,12 @@ const Form = ({ AddCategory }) => {
 				type="text"
 				value={inputValue}
 				onChange={handleChange}
-				className="p-2 border-2"
+				placeholder="Buscar gifs"
+				className="bg-slate-500/50 border-2 border-slate-100/50 text-white rounded-tl-lg rounded-bl-lg outline-none p-2 min-w-[250px] transition-all duration-500 placeholder:text-white focus:border-green-300"
 			/>
-			<button className="bg-cyan-600 text-white py-2 px-3">Buscar</button>
+			<button className="bg-white/30 font-semibold rounded-tr-lg rounded-br-lg text-white py-2 px-3 transition-all duration-500 hover:bg-white/50">
+				Buscar
+			</button>
 		</form>
 	);
 };

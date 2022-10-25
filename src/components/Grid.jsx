@@ -7,10 +7,12 @@ const Grid = ({ category }) => {
 
 	if (loading) return;
 
-	console.log(data);
-
-	return (
-		<div className="grid grid-cols-12 gap-5">
+	return data.length === 0 ? (
+		<span className="text-slate-600">
+			No se encuentran gifs sobre "{category}".
+		</span>
+	) : (
+		<div className="grid grid-cols-12 gap-x-5 gap-y-10">
 			{data.map((item) => (
 				<Card item={item} key={item.id} />
 			))}

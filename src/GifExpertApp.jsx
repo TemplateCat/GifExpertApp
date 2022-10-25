@@ -9,15 +9,19 @@ const GifExpertApp = () => {
 		setCategories([newCategory, ...categories]);
 	};
 
-	console.log(`estas viendo: ${categories}`);
-
 	return (
-		<div className="container mx-auto py-10 px-20">
-			<h1 className="font-bold text-4xl text-slate-500">Gif Expert App</h1>
+		<>
+			<header className="bg-gradient-to-r from-green-400 to-blue-500">
+				<div className="container mx-auto py-10 px-20">
+					<h1 className="font-bold text-4xl text-slate-100 border-b pb-5">
+						Gif Expert App
+					</h1>
+					<Form AddCategory={AddCategory} />
+				</div>
+			</header>
 
-			<Form AddCategory={AddCategory} />
 			<Section categories={categories} />
-		</div>
+		</>
 	);
 };
 
