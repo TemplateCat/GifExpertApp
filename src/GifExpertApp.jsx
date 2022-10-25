@@ -12,7 +12,7 @@ const GifExpertApp = () => {
 	return (
 		<>
 			<header className="bg-gradient-to-r from-green-400 to-blue-500">
-				<div className="container mx-auto py-10 px-20">
+				<div className="container mx-auto py-10 px-4 lg:px-20">
 					<h1 className="font-bold text-4xl text-slate-100 border-b pb-5">
 						Gif Expert App
 					</h1>
